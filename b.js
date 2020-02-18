@@ -1,11 +1,13 @@
-function finalbill(){
+btn.addEventListener("click",Bill);
+function Bill()
+{
 		
-    let billamount = parseFloat(document.getElementById("total_bill").value);
-    let tip_per = parseFloat(document.getElementById("tip_rate").value);
+    let total = parseFloat(document.getElementById("total").value);
+    let rate = parseFloat(document.getElementById("rate").value);
     
-    document.getElementById("tip_cost").innerHTML = "$" + billamount*tip_per/100;
-    document.getElementById("tax_cost").innerHTML = "$" + billamount*0.055;
-    document.getElementById("grand").innerHTML = "$" + (billamount + (billamount*tip_peres/100) + (billamount*0.055));
-    return false;
+    document.getElementById("tip").innerHTML = "Tip: $" + total*rate/100;
+    document.getElementById("tax").innerHTML = "Tax Value: $" + total*0.055;
+    document.getElementById("grandtotal").innerHTML = "Grand Total: $" + (total + (total*rate/100) + (total*0.055));
+    
 
 }

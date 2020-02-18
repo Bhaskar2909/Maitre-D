@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <style>
+        
         h1{
             text-align: center;
             background-color: blueviolet;
@@ -12,9 +13,9 @@
          footer{
 
             text-align: center;
+           
             background-color: lightblue;
             font-family: 'Times New Roman', Times, serif;
-
         }
         
         </style>
@@ -22,30 +23,38 @@
         
        
        <body>
+           <div id="01">
            <h1> MAITRE_D</h1>
+        </div>
+          
         <div style="text-align: center;">
 
-           <label for="total: ">total</label>
+           <label >Total</label>
            <input type="number" name="total" id="total" placeholder="enter total">
            <br><br>
            <br>
-       <label for="Rate">Rate</label>
-     <input type="number"step="0.01"  min="0" max="100" name="total" id="total" >
+       <label >Rate</label>
+     <input type="number" id="rate"step="0.01"  min="0" max="100" name="total" id="total" placeholder="enter rate" >
           <br>
           <br>
           <br>
 
           <div id="output">
-            <div class="output">Tip: </div>
-            <div class="output1" id="tip">$</div>
+            <div id="tip">Tip: $</div>
+            
             <br><br>
-            <div class="output">Tax: </div>
-            <div class="output1" id="tax">$</div>
+            <div> Tax: 5.5%</div>
+            <br>
+            <div id="tax">Tax Value: $</div>
+           
             <br><br>
-            <div class="output">Grand Total: </div>
-            <div class="output1" id="grandtotal">$</div>
+            <div id="grandtotal">Grand Total: $</div>
+           
             <br><br>
-            <div><input type="submit" value="Calculate" name="submit" onclick="Bill()"></div>
+            <div><button type="button" id="btn" class="btn">
+                <b>Calculate</b>
+            </button>
+            </div>
 
         
 <br>
